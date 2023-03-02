@@ -19,7 +19,7 @@ export const Title = styled.div`
   line-height: 148%;
   color: #899cb1;
   font-weight: 400;
-  margin-right: 6px;
+  margin-right: 10px;
 
   span {
     font-weight: 500;

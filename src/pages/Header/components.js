@@ -10,7 +10,6 @@ export const Container = styled.div`
 `;
 
 export const Date = styled.div`
-  font-family: 'SF Pro Display';
   font-weight: 400;
   font-size: 15px;
   line-height: 148%;

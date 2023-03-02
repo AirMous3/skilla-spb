@@ -1,7 +1,7 @@
 import React from 'react';
 
-import { Main } from '@/components/Main';
-import { Navbar } from '@/components/Navbar';
+import { Main } from '@/pages/Main';
+import { Navbar } from '@/pages/Navbar';
 
 import * as S from './components';
 

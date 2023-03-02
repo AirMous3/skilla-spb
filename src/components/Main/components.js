@@ -6,6 +6,7 @@ export const Wrapper = styled.div`
 
 export const Meta = styled.div`
   display: flex;
+  align-items: center;
   margin-top: 20px;
   margin-bottom: 34px;
 `;

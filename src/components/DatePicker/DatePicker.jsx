@@ -4,6 +4,8 @@ import * as S from './components';
 
 export const DatePicker = React.memo(() => (
   <S.Wrapper>
-      123
+    <S.Icon />
+
+    <S.Value>3 дня</S.Value>
   </S.Wrapper>
 ));

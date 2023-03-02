@@ -1,11 +1,14 @@
 import React from 'react';
 
+import { Main } from '@/components/Main';
 import { Navbar } from '@/components/Navbar';
 
 import * as S from './components';
 
+
 export const App = React.memo(() => (
-  <S.Container>
+  <S.Wrapper>
     <Navbar />
-  </S.Container>
+    <Main />
+  </S.Wrapper>
 ));

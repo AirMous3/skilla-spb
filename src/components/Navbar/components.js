@@ -1,12 +1,15 @@
 import styled from 'styled-components/macro';
 
-export const Container = styled.div`
+export const Wrapper = styled.div`
   background: #091336;
   max-width: 240px;
+  min-width: 240px;
   color: rgba(255, 255, 255, 0.6);
 `;
 
-export const NavItem = styled.div`
+export const NavLinks = styled.ul``
+
+export const NavLink = styled.li`
   display: flex;
   align-items: center;
   position: relative;

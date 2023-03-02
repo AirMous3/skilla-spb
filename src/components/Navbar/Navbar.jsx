@@ -6,13 +6,16 @@ import * as S from './components';
 import { navConfig } from './config';
 
 export const Navbar = React.memo(() => (
-  <S.Container>
+  <S.Wrapper>
     <S.Logo src={logo} />
-    {navConfig.map(({ title, icon }) => (
-      <S.NavItem>
-          <S.NavIcon icon={icon}/>
+
+    <S.NavLinks>
+      {navConfig.map(({ title, icon }) => (
+        <S.NavLink>
+          <S.NavIcon icon={icon} />
           {title}
-      </S.NavItem>
-    ))}
-  </S.Container>
+        </S.NavLink>
+      ))}
+    </S.NavLinks>
+  </S.Wrapper>
 ));

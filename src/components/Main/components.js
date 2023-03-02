@@ -10,3 +10,8 @@ export const Meta = styled.div`
   margin-top: 20px;
   margin-bottom: 34px;
 `;
+
+export const FilterPanel = styled.div`
+  display: flex;
+  justify-content: space-between;
+`

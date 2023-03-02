@@ -5,6 +5,7 @@ export const Wrapper = styled.div`
 `;
 
 export const Meta = styled.div`
-  
-`
-
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 34px;
+`;

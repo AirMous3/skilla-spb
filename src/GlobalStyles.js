@@ -4,7 +4,7 @@ export const Global = createGlobalStyle`
 
   body {
     margin: 0;
-    font-family: Roboto, sans-serif, serif, monospace;
+    font-family: 'SF Pro Display', sans-serif;
     background: #F1F4F9;
 
   }
@@ -21,5 +21,9 @@ export const Global = createGlobalStyle`
   ul {
     margin: 0;
     padding: 0;
+  }
+
+  button {
+    cursor: pointer;
   }
 `;

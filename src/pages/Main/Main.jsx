@@ -35,7 +35,7 @@ export const Main = React.memo(() => {
           <Filters />
         </S.FilterPanel>
 
-        <CallsTable />
+        <CallsTable callsData={calls} />
       </Container>
     </S.Wrapper>
   );

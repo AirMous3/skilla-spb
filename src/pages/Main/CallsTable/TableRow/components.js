@@ -37,7 +37,10 @@ export const CallAvatar = styled.div`
   border-radius: 50%;
 `;
 
-export const CallNumber = styled.div``;
+export const CallNumber = styled.div`
+  font-size: 14px;
+  color: #122945;
+`;
 
 export const TableRowCenter = styled.div`
   min-width: 40%;
@@ -45,7 +48,11 @@ export const TableRowCenter = styled.div`
   justify-content: space-evenly;
 `;
 
-export const CallSource = styled.div``;
+export const CallSource = styled.div`
+  font-size: 14px;
+  color: #5e7793;
+  max-width: 197px;
+`;
 
 export const CallGrade = styled.div``;
 

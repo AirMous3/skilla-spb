@@ -23,6 +23,10 @@ export const TableTd = styled.td`
   font-size: 14px;
   line-height: 100%;
   color: #899cb1;
+
+  span {
+    cursor: pointer;
+  }
 `;
 
 export const TableDurationWrapper = styled.div`
@@ -32,8 +36,8 @@ export const TableDurationWrapper = styled.div`
   padding-right: 40px;
 `;
 
-export const TableCentreWrapper = styled.div`
+export const TableCentreWrapper = styled.td`
   width: 40%;
   display: flex;
   justify-content: space-evenly;
-`
+`;

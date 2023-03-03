@@ -1,14 +1,12 @@
 import React from 'react';
 
-import { filtersConfig } from './config';
-
 import * as S from './components';
-
+import { filtersConfig } from './config';
 
 export const Filters = React.memo(() => (
   <S.Wrapper>
-    {filtersConfig.map(({ title }) => (
-      <S.Item>{title}</S.Item>
+    {filtersConfig.map(({ title }, index) => (
+      <S.Item key={index}>{title}</S.Item>
     ))}
   </S.Wrapper>
 ));

@@ -25,6 +25,6 @@ export const TableRow = React.memo(() => (
       <S.CallGrade>BAD</S.CallGrade>
     </S.TableRowCenter>
 
-    <S.TableRowDuration>123</S.TableRowDuration>
+    <S.TableRowDuration>12:03</S.TableRowDuration>
   </S.Wrapper>
 ));

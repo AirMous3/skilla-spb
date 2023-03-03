@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 
+import { getCallsTH } from '@/entities';
 import { Container } from '@/pages/Container';
 import { Header } from '@/pages/Header';
 import { Balance } from '@/pages/Main/Balance';
@@ -10,22 +12,31 @@ import { SearchFilter } from '@/pages/Main/SearchFilter';
 
 import * as S from './components';
 
-export const Main = React.memo(() => (
-  <S.Wrapper>
-    <Header />
+export const Main = React.memo(() => {
+  const dispatch = useDispatch();
+  const calls = useSelector((state) => state.calls.data);
 
-    <Container>
-      <S.Meta>
-        <Balance />
-        <DatePicker />
-      </S.Meta>
+  console.log(calls);
+  useEffect(() => {
+    dispatch(getCallsTH('2023-03-02', '2023-03-03'));
+  }, [dispatch]);
+  return (
+    <S.Wrapper>
+      <Header />
 
-      <S.FilterPanel>
-        <SearchFilter />
-        <Filters />
-      </S.FilterPanel>
+      <Container>
+        <S.Meta>
+          <Balance />
+          <DatePicker />
+        </S.Meta>
 
-      <CallsTable />
-    </Container>
-  </S.Wrapper>
-));
+        <S.FilterPanel>
+          <SearchFilter />
+          <Filters />
+        </S.FilterPanel>
+
+        <CallsTable />
+      </Container>
+    </S.Wrapper>
+  );
+});

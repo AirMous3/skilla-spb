@@ -13,7 +13,7 @@ export const navConfig = [
   { title: 'Итоги', icon: resultsIcon },
   { title: 'Заказы', icon: ordersIcon },
   { title: 'Сообщения', icon: messagesIcon },
-  { title: 'Звонки', icon: callsIcon },
+  { title: 'Звонки', icon: callsIcon, active: true },
   { title: 'Контрагенты', icon: counterpartiesIcon },
   { title: 'Документы', icon: documentsIcon },
   { title: 'Исполнители', icon: performersIcon },

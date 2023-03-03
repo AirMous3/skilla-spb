@@ -1,4 +1,4 @@
-import styled from 'styled-components/macro';
+import styled, { css } from 'styled-components/macro';
 
 export const Wrapper = styled.div`
   position: relative;
@@ -20,31 +20,34 @@ export const NavLink = styled.li`
   cursor: pointer;
   min-height: 52px;
 
-  &:hover {
-    background: rgba(216, 228, 251, 0.32);
+  ${({ active }) =>
+    active
+      ? css`
+          background: rgba(216, 228, 251, 0.32);
 
-    &:before {
-      content: '';
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 3px;
-      height: 100%;
-      background: #005ff8;
-    }
+          &:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 3px;
+            height: 100%;
+            background: #005ff8;
+          }
 
-    &:after {
-      content: '';
-      position: absolute;
-      right: 22px;
-      top: 22px;
-      width: 8px;
-      height: 8px;
-      background: #ffd500;
-      box-shadow: 0 3px 8px rgba(237, 218, 1, 0.5);
-      border-radius: 50%;
-    }
-  }
+          &:after {
+            content: '';
+            position: absolute;
+            right: 22px;
+            top: 22px;
+            width: 8px;
+            height: 8px;
+            background: #ffd500;
+            box-shadow: 0 3px 8px rgba(237, 218, 1, 0.5);
+            border-radius: 50%;
+          }
+        `
+      : null}
 `;
 
 export const NavIcon = styled.div`

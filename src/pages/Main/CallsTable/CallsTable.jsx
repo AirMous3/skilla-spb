@@ -6,36 +6,50 @@ import * as S from './components';
 export const CallsTable = React.memo(() => (
   <S.Wrapper>
     <S.TableHeader>
-      <S.TableTd calspan={"2"}>Тип</S.TableTd>
-      <S.TableTd>Время</S.TableTd>
-      <S.TableTd>Сотрудник</S.TableTd>
-      <S.TableTd>Звонок</S.TableTd>
+      <S.TableTd>Тип</S.TableTd>
+      <S.TableTd>
+        <span>Время</span>
+      </S.TableTd>
+      <S.TableTd>
+        <span>Сотрудник</span>
+      </S.TableTd>
+      <S.TableTd>
+        <span>Звонок</span>
+      </S.TableTd>
 
       <S.TableCentreWrapper>
-        <S.TableTd>Источник</S.TableTd>
-        <S.TableTd>Оценка</S.TableTd>
+        <S.TableTd>
+          <span>Источник</span>
+        </S.TableTd>
+        <S.TableTd>
+          <span>Оценка</span>
+        </S.TableTd>
       </S.TableCentreWrapper>
 
       <S.TableDurationWrapper>
-        <S.TableTd>Длительность</S.TableTd>
+        <S.TableTd>
+          <span>Длительность</span>
+        </S.TableTd>
       </S.TableDurationWrapper>
     </S.TableHeader>
 
-    <TableRow />
-    <TableRow />
-    <TableRow />
-    <TableRow />
-    <TableRow />
-    <TableRow />
-    <TableRow />
-    <TableRow />
-    <TableRow />
-    <TableRow />
-    <TableRow />
-    <TableRow />
-    <TableRow />
-    <TableRow />
-    <TableRow />
-    <TableRow />
+    <tbody>
+      <TableRow />
+      <TableRow />
+      <TableRow />
+      <TableRow />
+      <TableRow />
+      <TableRow />
+      <TableRow />
+      <TableRow />
+      <TableRow />
+      <TableRow />
+      <TableRow />
+      <TableRow />
+      <TableRow />
+      <TableRow />
+      <TableRow />
+      <TableRow />
+    </tbody>
   </S.Wrapper>
 ));
